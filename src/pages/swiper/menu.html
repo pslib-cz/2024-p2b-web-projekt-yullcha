@@ -1,65 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="/src/styles/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
-    <style>
-        .swiper {
-            --swiper-theme-color: #ffba08;
-            --swiper-pagination-color: #ffba08;
-            --swiper-pagination-bullet-size: 16px;
-            --swiper-pagination-bullet-inactive-color: #999999;
-            --swiper-pagination-bullet-inactive-opacity: 0.7;
-            --swiper-navigation-color: #ffba08;
-            --swiper-navigation-size: 32px;
-        }
-    
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rezervace – HelloKitty Restaurace</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/typography.css">
 </head>
-
 <body>
-    <div class="app">
-        <h1>Swiper</h1>
+  <header>
+    <nav class="navbar">
+      <div class="logo">HelloKitty</div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">O nás</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="rezervace.html" class="active">Rezervace</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide picture">
-                    <a class="picture__link" href="%BASE_URL%images/big/Sk2014_01.JPG">
-                        <img class="picture__image" src="%BASE_URL%images/Sk2014_01.JPG" alt="Kanál v Amsterodamu">
-                    </a>
-                </div>
-                <div class="swiper-slide picture">
-                    <a class="picture__link" href="%BASE_URL%images/big/Sk2014_02.JPG">
-                        <img class="picture__image" src="%BASE_URL%images/Sk2014_02.JPG" alt="Amsterodam (pobřeží)">
-                    </a>
-                </div>
-                <div class="swiper-slide picture">
-                    <a class="picture__link" href="%BASE_URL%images/big/Sk2014_03.JPG">
-                        <img class="picture__image" src="%BASE_URL%images/Sk2014_03.JPG" alt="Trajekt do UK">
-                    </a>
-                </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+  <main>
+    <section class="reservation-content">
+      <h1>Rezervace stolu</h1>
+      <form class="reservation-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Jméno</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+          </div>
         </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="guests">Počet osob</label>
+            <input type="number" id="guests" name="guests" min="1" max="20" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">Datum</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          <div class="form-group">
+            <label for="time">Čas</label>
+            <input type="time" id="time" name="time" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group full-width">
+            <label for="note">Poznámka</label>
+            <textarea id="note" name="note" rows="4" placeholder="Např. dětská židlička, narozeniny..."></textarea>
+          </div>
+        </div>
+        <div class="form-row">
+          <button type="submit" class="btn-submit">Odeslat rezervaci</button>
+        </div>
+      </form>
+    </section>
+  </main>
 
-
-        <p><a href="../">homepage link</a></p>
-        <p><a href="%BASE_URL%">homepage link <img src="/vite.svg"></a></p>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <p class="footer-title">HelloKitty</p>
+        <p>Adresa: Město, 123 45</p>
+        <p>Telefon: +420 111 222 333</p>
+      </div>
+      <div class="footer-section">
+        <p class="footer-title">Otevírací doba</p>
+        <p>Po–So: 11:00–22:00</p>
+        <p>Ne: 12:00–20:00</p>
+      </div>
     </div>
-    <script type="module" src="/src/scripts/swiper.js"></script>
-    <script type="module" src="/src/scripts/main.js"></script>
-</body>
+  </footer>
 
+  <script src="../scripts/hamburger.js"></script>
+</body>
 </html>

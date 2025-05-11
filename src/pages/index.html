@@ -1,20 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="/src/styles/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>O nás</title>
-  </head>
-  <body>
-    <div class="app">
-      <h1>Hello Example page</h1>
-      <p><a href="./contacts/">Link to Contact page</a></p>
-      <p><a href="%BASE_URL%contacts/">Link to Contact page</a></p>
-      <p><a href="%BASE_URL%swiper/">Link to Swiper example</a></p>
-      <p><a href="%BASE_URL%gallery.html">Link to Gallery example</a></p>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HelloKitty Restaurace</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/typography.css">
+  <link rel="stylesheet" href="../styles/gallery1.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">HelloKitty</div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">O nás</a></li>
+        <li><a href="./swiper/menu.html">Menu</a></li>
+        <li><a href="rezervace.html">Rezervace</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="/images/uvod.jpg" alt="Restaurace">
+    </section>
+
+    <section class="content">
+      <h1>Vítáme vás v restauraci HelloKitty</h1>
+      <p>
+        V restauraci HelloKitty vás přivítáme s otevřenou náručí a atmosférou, která spojuje moderní design, útulné prostředí a lásku k poctivému jídlu.
+      </p>
+      <p>
+        Naším cílem je vytvořit místo, kde si můžete odpočinout od každodenního shonu a užít si nezapomenutelný gastronomický zážitek.
+      </p>
+      <p>
+        Náš tým šéfkuchařů připravuje jídla z čerstvých a lokálních surovin, přičemž klademe důraz na kvalitu, sezónnost a kreativitu. Nabízíme pestrý výběr pokrmů – od tradiční evropské kuchyně až po moderní fusion speciality, které potěší i ty nejnáročnější chutě.
+      </p>
+      <p>
+        Ať už k nám zavítáte na oběd, večeři, obchodní schůzku nebo romantický večer, postaráme se o to, abyste se cítili výjimečně.
+      </p>
+      <p>
+        V HelloKitty nejde jen o jídlo – jde o zážitek. Chuť, atmosféra, pohostinnost a malá překvapení vám vykouzlí úsměv na tváři. Přijďte a přesvědčte se sami.
+      </p>
+      <p>
+        Těšíme se na vaši návštěvu každý den od 11:00 do 22:00 a o víkendu od 12:00 do 22:00.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <p class="footer-title">HelloKitty</p>
+        <p>Adresa: Město, 123 45</p>
+        <p>Telefon: +420 111 222 333</p>
+      </div>
+      <div class="footer-section">
+        <p class="footer-title">Otevírací doba</p>
+        <p>Po–So: 11:00–22:00</p>
+        <p>Ne: 12:00–20:00</p>
+      </div>
     </div>
-    <script type="module" src="/src/scripts/main.js"></script>
-  </body>
+  </footer>
+
+  <script src="../scripts/hamburger.js"></script>
+  <script src="../scripts/main.js"></script>
+  <script src="../scripts/swiper.js"></script>
+</body>
 </html>
