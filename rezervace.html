@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HelloKitty Restaurace</title>
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/styles/typography.css">
+  <script type="module" crossorigin src="/2024-p2b-web-projekt-yullcha/assets/rezervace-Dnfy9sqW.js"></script>
+  <link rel="modulepreload" crossorigin href="/2024-p2b-web-projekt-yullcha/assets/main-l0sNRNKZ.js">
+  <link rel="modulepreload" crossorigin href="/2024-p2b-web-projekt-yullcha/assets/hamburger-l0sNRNKZ.js">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+      <div class="logo">HelloKitty</div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">O nás</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="rezervace.html" class="active">Rezervace</a></li>
+      </ul>
+    </nav>
+     </header>
+
+  <main>
+    <section class="hero">
+        <img src="/2024-p2b-web-projekt-yullcha/assets/uvod-DbmXpHZw.jpg" alt="Restaurace">
+    </section>
+    <section class="reservation-content">
+      <h1>Rezervace stolu</h1>
+      <form class="reservation-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Jméno</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="guests">Počet osob</label>
+            <input type="number" id="guests" name="guests" min="1" max="20" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">Datum</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          <div class="form-group">
+            <label for="time">Čas</label>
+            <input type="time" id="time" name="time" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group full-width">
+            <label for="note">Poznámka</label>
+            <textarea id="note" name="note" rows="4" placeholder="Např. dětská židlička, narozeniny..."></textarea>
+          </div>
+        </div>
+        <div class="form-row">
+          <button type="submit" class="btn-submit">Odeslat rezervaci</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-left">
+      HelloKitty
+    </div>
+    <div class="footer-right">
+      <div class="footer-column">
+        <p>Otevírací doba</p>
+        <p>Po-So: 11:00 - 22:00 hod</p>
+        <p>Ne: 12:00 - 20:00 hod</p>
+      </div>
+      <div class="footer-column">
+        <p>Adresa</p>
+        <p>Město, 123 45</p>
+        <p>Kontakt</p>
+        <p>+420 111 222 333</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
