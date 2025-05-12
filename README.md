@@ -1,6 +1,3 @@
-# 2024-p2b-web-projekt-yullcha
-2024-p2b-web-projekt-yullcha created by GitHub Classroom
-
 [figma](https://www.figma.com/design/bkGhYVhVkJflKMIgeJs9fp/OzerchukYuliana?node-id=0-1&t=EnUlU8jCRthbedla-1)
 
 [živý web](http://pslib-cz.github.io/2024-p2b-web-projekt-yullcha)
