@@ -3,9 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HelloKitty Restaurace</title>
-  <link rel="stylesheet" href="/styles/style.css">
-  <link rel="stylesheet" href="/styles/typography.css">
+  <title>HelloKitty - Rezervace</title>
 </head>
 <body>
     <header>
@@ -13,16 +11,16 @@
       <div class="logo">HelloKitty</div>
       <button class="hamburger" onclick="toggleMenu()">☰</button>
       <ul class="nav-links">
-        <li><a href="index.html">O nás</a></li>
-        <li><a href="swiper/menu.html">Menu</a></li>
-        <li><a href="rezervace.html" class="active">Rezervace</a></li>
+        <li><a href="%BASE_URL%index.html">O nás</a></li>
+        <li><a href="%BASE_URL%swiper/menu.html">Menu</a></li>
+        <li><a href="%BASE_URL%rezervace.html" class="active">Rezervace</a></li>
       </ul>
     </nav>
      </header>
 
   <main>
     <section class="hero">
-        <img src="/images/uvod.jpg" alt="Restaurace">
+        <img src="%BASE_URL%images/uvod.jpg" alt="Restaurace">
     </section>
     <section class="reservation-content">
       <h1>Rezervace stolu</h1>
@@ -89,8 +87,8 @@
     </div>
   </footer>
 
-  <script type="module" src="/src/scripts/main.js"></script>
-  <script type="module" src="/src/scripts/hamburger.js"></script>
-  <script type="module" src="/src/scripts/hamburger.js"></script>
+  <script type="module" src="%BASE_URL%src/scripts/main.js"></script>
+  <script type="module" src="%BASE_URL%src/scripts/hamburger.js"></script>
+  <script type="module" src="%BASE_URL%src/scripts/hamburger.js"></script>
 </body>
 </html>

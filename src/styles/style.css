@@ -1,113 +1,140 @@
-/* Reset */
+/* style.css */
+
+/* Reset a základní nastavení */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
- 
+
 body {
   font-family: 'Inter', sans-serif;
+  background-color: #fff6fa;
+  color: #1a1a1a;
   line-height: 1.6;
-  background-color: #fff;
-  color: #333;
-  padding: 0;
-  margin: 0;
 }
- 
+
 /* Navigace */
-nav {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffc0cb;
+  background-color: #ff9cda;
   padding: 1rem 2rem;
 }
- 
-nav .left {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
- 
-nav .right a {
-  margin-left: 1rem;
+
+.navbar a {
   text-decoration: none;
-  color: #333;
+  color: #1a1a1a;
+  margin-left: 2rem;
   font-weight: 500;
 }
- 
-nav .right a:hover {
+
+.navbar a:hover {
   text-decoration: underline;
 }
- 
+
 /* Hero sekce */
 .hero img {
   width: 100%;
   height: auto;
   display: block;
+  max-height: 500px;
+  object-fit: cover;
 }
- 
+
 /* Hlavní obsah */
 .main-content {
-  padding: 2rem;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
+  padding: 4rem 2rem;
+  background-color: #fff6fa;
 }
- 
-.main-content h2 {
+
+.about h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: #333;
 }
- 
-/* Formulář (pokud je v jiných stránkách) */
-form .form-group {
+
+.about p {
   margin-bottom: 1rem;
+  font-size: 1rem;
 }
- 
-form label {
-  display: block;
-  margin-bottom: 0.5rem;
-}
- 
-form input,
-form textarea {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
- 
-/* Tlačítko */
-button {
-  padding: 0.75rem 1.5rem;
-  background-color: #ff69b4;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
- 
-button:hover {
-  background-color: #ff85c1;
-}
- 
+
 /* Footer */
 footer {
-  background-color: #f8f8f8;
+  background-color: #ffb3e6;
   padding: 2rem;
+  color: #1a1a1a;
+}
+
+.footer-content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
 }
- 
-.footer-left {
+
+.footer-section {
+  margin-bottom: 1rem;
+}
+
+.footer-title {
   font-weight: bold;
-}
- 
-.footer-right {
-  display: flex;
-  gap: 2rem;
-}
- 
-.footer-column p {
   margin-bottom: 0.5rem;
+  color: #e60073;
+}
+
+/* Tlačítka */
+button,
+input[type="submit"] {
+  background-color: #000;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #333;
+}
+
+/* Formuláře */
+input[type="text"],
+input[type="email"],
+input[type="datetime-local"],
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar a {
+    margin: 0.5rem 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
 }
