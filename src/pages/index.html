@@ -8,25 +8,29 @@
 <body>
   <nav class="navbar">
     <div class="navbar-left">HelloKitty</div>
-    <div class="hamburger" id="hamburger">
+    <div class="navbar-toggle" id="menu-toggle">
       <span></span>
       <span></span>
       <span></span>
     </div>
-    <div class="navbar-right" id="nav-links">
+    <div class="navbar-right">
+      <a href="%BASE_URL%index.html">O nás</a>
+      <a href="%BASE_URL%menu.html">Menu</a>
+      <a href="%BASE_URL%rezervace.html">Rezervace</a>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
       <a href="%BASE_URL%index.html">O nás</a>
       <a href="%BASE_URL%menu.html">Menu</a>
       <a href="%BASE_URL%rezervace.html">Rezervace</a>
     </div>
   </nav>
-
   <section class="hero">
     <img src="%BASE_URL%images/uvod.webp" alt="Restaurace">
   </section>
 
   <main class="main-content">
     <section class="about">
-      <h1>Vítejte v restauraci HelloKitty</h1>
+      <h2>Vítejte v restauraci HelloKitty</h2>
       <p>V restauraci HelloKitty vás přivítáme s otevřenou náručí a atmosférou, která propojuje moderní design, útulné prostředí a lásku k poctivému jídlu. Naše restaurace vznikla s myšlenkou vytvořit místo, kde si lidé mohou odpočinout od každodenního shonu a dopřát si nezapomenutelný gastronomický zážitek.</p>
       <p>Náš tým šéfkuchařů připravuje jídla z čerstvých a lokálních surovin, přičemž klademe důraz na kvalitu, sezónnost a kreativitu. Nabízíme širokou škálu pokrmů od tradiční evropské kuchyně až po moderní fusion speciality, které potěší i ty nejnáročnější jazýčky.</p>
       <p>Ať už k nám zavítáte na oběd, večeři, obchodní schůzku nebo romantický večer, garantujeme, že se u nás budete cítit výjimečně.</p>
@@ -50,7 +54,9 @@
     </div>
   </footer>
 
+  
   <script type="module" src="%BASE_URL%src/scripts/main.js"></script>
+  <script type="module" src="%BASE_URL%src/scripts/hamburger.js"></script>
   
 </body>
 </html>

@@ -8,9 +8,19 @@
 <body>
   <nav class="navbar">
     <div class="navbar-left">HelloKitty</div>
+    <div class="navbar-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <div class="navbar-right">
       <a href="%BASE_URL%index.html">O nás</a>
-      <a href="%BASE_URL%swiper/menu.html">Menu</a>
+      <a href="%BASE_URL%menu.html">Menu</a>
+      <a href="%BASE_URL%rezervace.html">Rezervace</a>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="%BASE_URL%index.html">O nás</a>
+      <a href="%BASE_URL%menu.html">Menu</a>
       <a href="%BASE_URL%rezervace.html">Rezervace</a>
     </div>
   </nav>
@@ -21,8 +31,7 @@
 
   <main class="main-content">
     <section class="menu">
-      <h1>Menu</h1>
-
+      <h2>Menu</h2>
       <div class="menu-category">
         <h2>Předkrmy</h2>
         <ul>
@@ -73,5 +82,9 @@
       </div>
     </div>
   </footer>
+
+  <script type="module" src="%BASE_URL%src/scripts/main.js"></script>
+  <script type="module" src="%BASE_URL%src/scripts/hamburger.js"></script>
+
 </body>
 </html>
