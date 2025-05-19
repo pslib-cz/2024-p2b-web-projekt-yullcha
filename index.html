@@ -1,50 +1,64 @@
 <!DOCTYPE html>
 <html lang="cs">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HelloKitty Restaurace</title>
-    <link rel="stylesheet" href="/styles/style.css" />
-    <script type="module" crossorigin src="/2024-p2b-web-projekt-yullcha/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-    <script type="module" crossorigin src="/2024-p2b-web-projekt-yullcha/assets/main-l0sNRNKZ.js"></script>
-  </head>
-  <body>
-    <nav>
-      <div class="left">HelloKitty</div>
-      <div class="right">
-        <a href="/src/pages/index.html">O nás</a>
-        <a href="/src/pages/swiper/menu.html">Menu</a>
-        <a href="/src/pages/rezervace.html">Rezervace</a>
-      </div>
-      <section class="hero">
-        <img src="/2024-p2b-web-projekt-yullcha/assets/uvod-DbmXpHZw.jpg" alt="Restaurace">
-      </section>
- 
-<main class="main-content">
-  <section class="about">
-    <h2>Vítejte v restauraci HelloKitty</h2>
-    <p>V restauraci HelloKitty vás přivítáme s otevřenou náručí a atmosférou, která propojuje moderní design, útulné prostředí a lásku k poctivému jídlu. Naše restaurace vznikla s myšlenkou vytvořit místo, kde si lidé mohou odpočinout od každodenního shonu a dopřát si nezapomenutelný gastronomický zážitek.</p>
-    <p>Náš tým šéfkuchařů připravuje jídla z čerstvých a lokálních surovin, přičemž klademe důraz na kvalitu, sezónnost a kreativitu. Nabízíme širokou škálu pokrmů od tradiční evropské kuchyně až po moderní fusion speciality, které potěší i ty nejnáročnější jazýčky.</p>
-    <p>Ať už k nám zavítáte na oběd, večeři, obchodní schůzku nebo romantický večer, garantujeme, že se u nás budete cítit výjimečně.</p>
-    <p>V HelloKitty nejde jen o jídlo. Jde o zážitek – o chuť, atmosféru, pohostinnost a malá překvapení, která vám vykouzlí úsměv na tváři. Přijďte a přesvědčte se sami.</p>
-    <p>Těšíme se na vaši návštěvu každý den od 11:00 do 22:00 a o víkendu od 12:00 do 22:00.</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HelloKitty – O nás</title>
+  <script type="module" crossorigin src="/2024-p2b-web-projekt-yullcha/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
+  <script type="module" crossorigin src="/2024-p2b-web-projekt-yullcha/assets/hamburger-DNhhSk5L.js"></script>
+  <script type="module" crossorigin src="/2024-p2b-web-projekt-yullcha/assets/main-DcVtoNYI.js"></script>
+  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-yullcha/assets/style-RRJGm1Wy.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">HelloKitty</div>
+    <div class="navbar-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="navbar-right">
+      <a href="/2024-p2b-web-projekt-yullcha/index.html">O nás</a>
+      <a href="/2024-p2b-web-projekt-yullcha/menu.html">Menu</a>
+      <a href="/2024-p2b-web-projekt-yullcha/rezervace.html">Rezervace</a>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="/2024-p2b-web-projekt-yullcha/index.html">O nás</a>
+      <a href="/2024-p2b-web-projekt-yullcha/menu.html">Menu</a>
+      <a href="/2024-p2b-web-projekt-yullcha/rezervace.html">Rezervace</a>
+    </div>
+  </nav>
+  <section class="hero">
+    <img src="/2024-p2b-web-projekt-yullcha/images/uvod.webp" alt="Restaurace">
   </section>
-</main>
- 
-<footer>
-  <div class="footer-content">
-    <div class="footer-section">
-      <p class="footer-title">HelloKitty</p>
-      <p>Adresa: Město, 123 45</p>
-      <p>Telefon: +420 111 222 333</p>
+
+  <main class="main-content">
+    <section class="about">
+      <h2>Vítejte v restauraci HelloKitty</h2>
+      <p>V restauraci HelloKitty vás přivítáme s otevřenou náručí a atmosférou, která propojuje moderní design, útulné prostředí a lásku k poctivému jídlu. Naše restaurace vznikla s myšlenkou vytvořit místo, kde si lidé mohou odpočinout od každodenního shonu a dopřát si nezapomenutelný gastronomický zážitek.</p>
+      <p>Náš tým šéfkuchařů připravuje jídla z čerstvých a lokálních surovin, přičemž klademe důraz na kvalitu, sezónnost a kreativitu. Nabízíme širokou škálu pokrmů od tradiční evropské kuchyně až po moderní fusion speciality, které potěší i ty nejnáročnější jazýčky.</p>
+      <p>Ať už k nám zavítáte na oběd, večeři, obchodní schůzku nebo romantický večer, garantujeme, že se u nás budete cítit výjimečně.</p>
+      <p>V HelloKitty nejde jen o jídlo. Jde o zážitek – o chuť, atmosféru, pohostinnost a malá překvapení, která vám vykouzlí úsměv na tváři. Přijďte a přesvědčte se sami.</p>
+      <p>Těšíme se na vaši návštěvu každý den od 11:00 do 22:00 a o víkendu od 12:00 – 22:00.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <p class="footer-title">HelloKitty</p>
+        <p>Adresa: Město, 123 45</p>
+        <p>Telefon: +420 111 222 333</p>
+      </div>
+      <div class="footer-section">
+        <p class="footer-title">Otevírací doba</p>
+        <p>Po–So: 11:00–22:00</p>
+        <p>Ne: 12:00–20:00</p>
+      </div>
     </div>
-    <div class="footer-section">
-      <p class="footer-title">Otevírací doba</p>
-      <p>Po–So: 11:00–22:00</p>
-      <p>Ne: 12:00–20:00</p>
-    </div>
-  </div>
-</footer>
- 
-  </body>
+  </footer>
+
+  
+  
+</body>
 </html>
